@@ -28,6 +28,15 @@ export const removeReport = (reportId) => ({
 /** Thunk Action Creators: */
 
 // Your code here 
+export const getAllReports = () => async (dispatch) => {
+  const response = await fetch('api/reports')
+  if (response.ok) {
+    const data = await response.json();
+    dispatch(loadReports(data))
+    return data;
+  }
+
+}
 
 /** Selectors: */
 

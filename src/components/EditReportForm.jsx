@@ -2,10 +2,10 @@ import { useParams } from 'react-router-dom';
 import ReportForm from './ReportForm';
 
 const EditReportForm = () => {
-  const { reportId } = useParams();
+  // const { reportId } = useParams();
   const report = {}; // populate from Redux store
 
-  if (!report) return(<></>);
+  if (!report) return (<></>);
 
   /* **DO NOT CHANGE THE RETURN VALUE** */
   return (
@@ -21,4 +21,3 @@ const EditReportForm = () => {
 };
 
 export default EditReportForm;
-

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const ReportForm = ({ report, formType }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [understanding, setUnderstanding] = useState(report?.understanding);
   const [improvement, setImprovement] = useState(report?.improvement);
   const [errors, setErrors] = useState({});
